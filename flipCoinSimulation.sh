@@ -36,3 +36,13 @@ else
 	echo "No one Won"
 fi
 
+	while [ $(($headCount-$tailCount)) -le 2 -o $(($tailCount-$headCount)) -le 2 ]
+	do
+		coin=$((RANDOM%2));
+		toss_the_coin $coin
+
+	done
+else
+	echo "No one Won"
+fi
+
